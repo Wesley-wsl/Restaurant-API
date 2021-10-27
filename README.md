@@ -6,15 +6,15 @@
 ### Desafio
 
 - A sua API deverá ser capaz de:
-    - Listar todos os restaurantes
-    - Cadastrar novos restaurantes
-    - Listar os dados de um restaurante
-    - Alterar os dados um restaurante
-    - Excluir um restaurante
-    - Listar todos os produtos de um restautante
-    - Criar um produto de um restaurante
-    - Alterar um produto de um restaurante
-    - Excluir um produto de um restaurante
+    - [x] Listar todos os restaurantes
+    - [x] Cadastrar novos restaurantes
+    - [x] Listar os dados de um restaurante
+    - [x] Alterar os dados um restaurante
+    - [x] Excluir um restaurante
+    - [x] Listar todos os produtos de um restautante
+    - [x] Criar um produto de um restaurante
+    - [x] Alterar um produto de um restaurante
+    - [x] Excluir um produto de um restaurante
 
 - O cadastro do restaurante precisa ter os seguintes campos:
     - Foto do restaurante
@@ -31,11 +31,6 @@
         - Descrição para a promoção do produto (ex.: Chopp pela metade do preço)
         - Preço promocional
         - Dias da semana e o horário em que o produto deve estar em promoção
-
-##### Formato de horários
-- É necessário tratar os campos que indicam horários de funcionamento e horário para as promoções dos produtos. 
-- Os campos devem possuir o formato `HH:mm`. 
-- Os horários devem possuir intervalo mínimo de 15 minutos.
 
 ### Notas
 
