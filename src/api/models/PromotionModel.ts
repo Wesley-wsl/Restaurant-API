@@ -5,7 +5,6 @@ const PromotionSchema = new mongoose.Schema({
     price_promotional: { type: Number, required: true },
     week_days: { type: String, required: true },
     schedule: { type: String, required: true },
-    products: [{ type: mongoose.Schema.Types.ObjectId, ref: "products" }],
 });
 
-export default mongoose.model("Promotion", PromotionSchema);
+export default mongoose.model("promotion", PromotionSchema);

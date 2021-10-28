@@ -5,7 +5,7 @@ const ProductsSchema = new mongoose.Schema({
     product_image: { type: String, required: true },
     price: { type: Number, required: true },
     category: { type: String, required: true },
-    promotion: [{ type: mongoose.Schema.Types.ObjectId, ref: "Promotion" }],
+    promotion: [{ type: mongoose.Schema.Types.ObjectId, ref: "promotion" }],
 });
 
 export default mongoose.model("products", ProductsSchema);
