@@ -6,6 +6,7 @@ export interface iRestaurant {
     address: string;
     opening_hours: string;
     restaurant_image: string;
+    products?: iProduct;
 }
 
 export interface iProduct {
@@ -14,4 +15,17 @@ export interface iProduct {
     product_image: string;
     price: number;
     category: string;
+    promotion?: Array<Object>;
+}
+
+export interface id {
+    id: string;
+}
+
+export interface iPromotion {
+    id: string;
+    description: string;
+    price_promotional: number;
+    week_days: string;
+    schedule: string;
 }
