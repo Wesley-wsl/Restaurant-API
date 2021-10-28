@@ -3,12 +3,14 @@ import "./config/dbConfig";
 import "express-async-errors";
 import { RestaurantRoutes } from "./api/routers/Restaurant";
 import { ProductRoutes } from "./api/routers/Product";
+import { PromotionRoutes } from "./api/routers/Promotion";
 
 const app = express();
 
 app.use(express.json());
 app.use("/restaurant", RestaurantRoutes);
 app.use("/product", ProductRoutes);
+app.use("/promotion", PromotionRoutes);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     if (err instanceof Error) {
