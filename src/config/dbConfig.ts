@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const dbConfig = process.env.MONGODB_URI;
+const dbConfig: any = process.env.MONGODB_URI;
 
 const connection = mongoose.connect(dbConfig);
 
