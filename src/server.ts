@@ -23,3 +23,5 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 });
 
 app.listen(3333, () => console.log("Server is runing"));
+
+export default app
