@@ -4,10 +4,14 @@ import "express-async-errors";
 import { RestaurantRoutes } from "./api/routers/Restaurant";
 import { ProductRoutes } from "./api/routers/Product";
 import { PromotionRoutes } from "./api/routers/Promotion";
+import swaggerUi from "swagger-ui-express";
+
+import swaggerDocs from "./config/swagger/swagger.json";
 
 const app = express();
 
 app.use(express.json());
+app.use("/documentation", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use("/restaurant", RestaurantRoutes);
 app.use("/product", ProductRoutes);
 app.use("/promotion", PromotionRoutes);
@@ -24,4 +28,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
 app.listen(3333, () => console.log("Server is runing"));
 
-export default app
+export default app;
