@@ -1,7 +1,8 @@
 # Restaurant-API - Backend
 
-- **Objetivo do Projeto:** Criar uma API RESTful capaz de gerenciar os restaurantes e os produtos do seu cardápio.
+<img src="./.github/insomnia.png" />
 
+- **Objetivo do Projeto:** Criar uma API RESTful capaz de gerenciar os restaurantes e os produtos do seu cardápio.
 
 ### Desafio
 
@@ -21,7 +22,7 @@
     - Nome do restaurante
     - Endereço do restaurante
     - Horários de funcionamento do restaurante (ex.: De Segunda à Sexta das 09h as 18h e de Sabado à Domingo das 11h as 20h).
-    
+
 - O cadastro de produtos do restaurante precisa ter os seguintes campos:
     - Foto do produto
     - Nome do produto
@@ -32,13 +33,4 @@
         - Preço promocional
         - Dias da semana e o horário em que o produto deve estar em promoção
 
-### Notas
-
-- Documentar o projeto com swagger
-- Fazer testes unitários
-- Ter em mente conceitos de *SOLID, KISS, YAGNI e DRY*.
-
 ### Happy coding 
-
-![Happy Coding](https://c.tenor.com/VLpzyHKoLlUAAAAM/shino-aki-remake.gif)
-****
